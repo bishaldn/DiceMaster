@@ -136,3 +136,13 @@ td {
     color: red;
     font-size: 23px;
 }
+.image-t{
+    animation: flipV 1s linear;
+    height: 11vh;
+}
+@keyframes flipV{
+    50%{
+        transform: rotateY(180deg);
+    }
+    
+}

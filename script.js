@@ -18,7 +18,12 @@ function ludoGameOne() {
             sum1 = sum1 + a[i];
         }
         console.log(sum1);
+        alert('Only 5 trail are allowed');
     }
+    removeClassTwo();
+    addClassOne();
+   
+   
 }
 var b = [];
 var sum2 = 0;
@@ -48,10 +53,11 @@ function ludoGameTwo() {
         clear(displayp);
         setTimeout(()=>{
             window.location.reload(true);
-        },1100);
+        },3000);
         
     }
-
+    addClassTwo();
+    removeClassOne();
 }
 
 function winner() {
@@ -81,4 +87,17 @@ function clear(display) {
     for(var i=5;i>=1;i--){
         display.deleteRow(i);
     }
+}
+function addClassTwo(){
+    document.getElementById('playertwo').classList.add('image-t');
+}
+function removeClassTwo(){
+    document.getElementById('playertwo').classList.remove('image-t');
+}
+
+function addClassOne(){
+    document.getElementById('playerone').classList.add('image-t');
+}
+function removeClassOne(){
+    document.getElementById('playerone').classList.remove('image-t');
 }
