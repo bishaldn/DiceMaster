@@ -63,14 +63,13 @@ function ludoGameTwo() {
 }
 
 function winner() {
-    const win_snd = new Audio();
-    win_snd.src= './sound/win-sound.wav';
+    
     if (sum1 > sum2) {
         document.getElementById('title').innerHTML = "Player-1 WON";
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-        win_snd.play();
+        winSound();
 
     }
     else if (sum1 < sum2) {
@@ -78,7 +77,7 @@ function winner() {
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-        win_snd.play();
+        winSound();
 
     }
     else {
@@ -86,7 +85,7 @@ function winner() {
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-        win_snd.play();
+        winSound();
 
     }
 }
@@ -112,4 +111,9 @@ function sound() {
     const audio = new Audio();
     audio.src = './sound/dice34roll.mp3';
     audio.play();
+}
+function winSound(){
+    const win_snd = new Audio();
+    win_snd.src= './sound/win-sound.wav';
+    win_snd.play();
 }
