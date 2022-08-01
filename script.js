@@ -11,7 +11,7 @@ function ludoGameOne() {
     var newRow = display.insertRow(row);
     var cell1 = newRow.insertCell(0);
     cell1.innerHTML = dice_1;
-
+    
     a.push(dice_1);
     if (a[4]) {
         for (var i = 0; i < 5; i++) {
@@ -46,6 +46,9 @@ function ludoGameTwo() {
         var displayp = document.getElementById('score-table-1');
         clear(displayq);
         clear(displayp);
+        setTimeout(()=>{
+            window.location.reload(true);
+        },1100);
         
     }
 
