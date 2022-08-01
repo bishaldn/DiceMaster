@@ -32,22 +32,22 @@ body {
 
 h1 {
     margin-top: 4vh;
-    text-shadow: 5px 2px blueviolet;
-    font-size: 5rem;
+    text-shadow: 2px 1px blueviolet;
+    font-size: 3.4rem;
     text-align: center;
 }
 
 p {
     color: blueviolet;
     font-size: 1.6rem;
-    text-shadow: 2px 1px blue;
+    text-shadow: 1px 1px blue;
 }
 
 .button {
     background-color: blueviolet;
     color: aliceblue;
-    width: 10vw;
     height: 8vh;
+    padding: 5px;
     margin-top: 3vh;
     border: none;
     border-radius: 13px;

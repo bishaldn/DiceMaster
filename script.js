@@ -11,7 +11,7 @@ function ludoGameOne() {
     var newRow = display.insertRow(row);
     var cell1 = newRow.insertCell(0);
     cell1.innerHTML = dice_1;
-    
+
     a.push(dice_1);
     if (a[4]) {
         for (var i = 0; i < 5; i++) {
@@ -22,8 +22,9 @@ function ludoGameOne() {
     }
     removeClassTwo();
     addClassOne();
-   
-   
+    sound();
+
+
 }
 var b = [];
 var sum2 = 0;
@@ -51,53 +52,64 @@ function ludoGameTwo() {
         var displayp = document.getElementById('score-table-1');
         clear(displayq);
         clear(displayp);
-        setTimeout(()=>{
+        setTimeout(() => {
             window.location.reload(true);
-        },3000);
-        
+        }, 3000);
+
     }
     addClassTwo();
     removeClassOne();
+    sound();
 }
 
 function winner() {
+    const win_snd = new Audio();
+    win_snd.src= './sound/win-sound.wav';
     if (sum1 > sum2) {
         document.getElementById('title').innerHTML = "Player-1 WON";
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-        
+        win_snd.play();
+
     }
     else if (sum1 < sum2) {
         document.getElementById('title').innerHTML = "Player-2 WON";
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-       
+        win_snd.play();
+
     }
     else {
         document.getElementById('title').innerHTML = "Draw";
         document.getElementById('title').style.color = 'red';
         document.getElementById('h31').innerHTML = `Total Score: ${sum1}`;
         document.getElementById('h32').innerHTML = `Total Score: ${sum2}`;
-        
+        win_snd.play();
+
     }
 }
 function clear(display) {
-    for(var i=5;i>=1;i--){
+    for (var i = 5; i >= 1; i--) {
         display.deleteRow(i);
     }
 }
-function addClassTwo(){
+function addClassTwo() {
     document.getElementById('playertwo').classList.add('image-t');
 }
-function removeClassTwo(){
+function removeClassTwo() {
     document.getElementById('playertwo').classList.remove('image-t');
 }
 
-function addClassOne(){
+function addClassOne() {
     document.getElementById('playerone').classList.add('image-t');
 }
-function removeClassOne(){
+function removeClassOne() {
     document.getElementById('playerone').classList.remove('image-t');
+}
+function sound() {
+    const audio = new Audio();
+    audio.src = './sound/dice34roll.mp3';
+    audio.play();
 }
