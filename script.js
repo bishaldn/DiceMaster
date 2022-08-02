@@ -1,7 +1,7 @@
 var row = 1;
 var a = [];
 var sum1 = 0;
-var count_1=0;
+var count_1 = 0;
 function ludoGameOne() {
     const dice_1 = Math.floor(Math.random() * 6) + 1;
 
@@ -19,17 +19,16 @@ function ludoGameOne() {
             sum1 = sum1 + a[i];
         }
         console.log(sum1);
-        alert('Only 5 trail are allowed');
+
     }
     removeClassTwo();
     addClassOne();
     sound();
     count_1++;
-    console.log(count_1);
-
+    limit(count_1);
 
 }
-var count_2=0;
+var count_2 = 0;
 var b = [];
 var sum2 = 0;
 function ludoGameTwo() {
@@ -65,13 +64,12 @@ function ludoGameTwo() {
     removeClassOne();
     sound();
     count_2++;
-    console.log(count_2);
-    alert(count_1,count_2);
-    
+    alert(count_1, count_2);
+
 }
 
 function winner() {
-    
+
     if (sum1 > sum2) {
         document.getElementById('title').innerHTML = "Player-1 WON";
         document.getElementById('title').style.color = 'red';
@@ -120,20 +118,37 @@ function sound() {
     audio.src = './sound/dice34roll.mp3';
     audio.play();
 }
-function winSound(){
+function winSound() {
     const win_snd = new Audio();
-    win_snd.src= './sound/win-sound.wav';
+    win_snd.src = './sound/win-sound.wav';
     win_snd.play();
 }
-function alert(one,two){
-    if((one==0) && (two==1)){
+function alert(one, two) {
+    if ((one == 0) && (two == 1)) {
         setTimeout(() => {
             window.location.reload(true);
-        }, 1500);
+        }, 1000);
         document.getElementById('title').innerHTML = "Roll Dice-1 first";
         const notify = new Audio();
-        notify.src= './sound/alarm.mp3';
+        notify.src = './sound/alarm.mp3';
         notify.play();
 
+    }
+}
+var dec = 1;
+function limit(amrita) {
+    if (amrita == (5)) {
+        setTimeout(() => {
+            document.getElementById('title').innerHTML = "Out of trails, Complete dice-2";
+        }, 1);
+    }
+    else if(amrita==6){
+        setTimeout(() => {
+            window.location.reload(true);
+        }, 1000); 
+        document.getElementById('title').innerHTML = "Game Over,Starting Again";
+        const game_over = new Audio();
+         game_over.src = './sound/gameover.wav';
+        game_over.play();
     }
 }

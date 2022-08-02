@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -144,5 +144,17 @@ td {
     50%{
         transform: rotateY(180deg);
     }
+    
+}
+.icon{
+    width: 30px;
+}
+.github{
+    color: blueviolet;
+    font-size: 20px;
+    text-shadow: 1px 1px blue;
+}
+.dark{
+    background-image:url("dices/night-mode.png") ;
     
 }

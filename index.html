@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludo gAME</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 id="title">JS LUDO</h1>
+    <h1 id="title">JS DICE</h1>
     <div class="container">
 
         <div class="dice">
-            <p>Player 1</p>
-            <img  src="dices/dice_1.webp" id="playerone" class="image">
+            <p>Player1</p>
+            <img src="dices/dice_1.webp" id="playerone" class="image">
             <br>
             <button onclick="ludoGameOne()" class="button">ROLL DICE 1</button>
             <br>
             <h3 class="h31" id="h31"></h3>
         </div>
         <div class="dice">
-            <p>Player 2</p>
+            <p>Player2</p>
             <img src="dices/dice_2.webp" id="playertwo" class="image">
             <br>
             <button onclick="ludoGameTwo()" class="button">ROLL DICE 2</button>
@@ -59,8 +62,11 @@
     <div class="footer">
         <p class="f-text-1">made with </p>
         <p class="f-text-2">&#x2764</p>
+        <p class="f-text-1">by </p>
+        
+        <a  href="https://github.com/bishaldn" target="blank"><img src="dices/dp.png" class="icon"></a>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 
