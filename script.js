@@ -1,6 +1,7 @@
 var row = 1;
 var a = [];
 var sum1 = 0;
+var count_1=0;
 function ludoGameOne() {
     const dice_1 = Math.floor(Math.random() * 6) + 1;
 
@@ -23,9 +24,12 @@ function ludoGameOne() {
     removeClassTwo();
     addClassOne();
     sound();
+    count_1++;
+    console.log(count_1);
 
 
 }
+var count_2=0;
 var b = [];
 var sum2 = 0;
 function ludoGameTwo() {
@@ -60,6 +64,10 @@ function ludoGameTwo() {
     addClassTwo();
     removeClassOne();
     sound();
+    count_2++;
+    console.log(count_2);
+    alert(count_1,count_2);
+    
 }
 
 function winner() {
@@ -116,4 +124,16 @@ function winSound(){
     const win_snd = new Audio();
     win_snd.src= './sound/win-sound.wav';
     win_snd.play();
+}
+function alert(one,two){
+    if((one==0) && (two==1)){
+        setTimeout(() => {
+            window.location.reload(true);
+        }, 1500);
+        document.getElementById('title').innerHTML = "Roll Dice-1 first";
+        const notify = new Audio();
+        notify.src= './sound/alarm.mp3';
+        notify.play();
+
+    }
 }
