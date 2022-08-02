@@ -152,3 +152,14 @@ function limit(amrita) {
         game_over.play();
     }
 }
+var setTheme = localStorage.getItem('theme');
+if(setTheme==null){
+    swapStyle('style.css');
+}
+else{
+    swapStyle(setTheme);
+}
+function swapStyle(sheet){
+    document.getElementById('myStyleSheet').href = sheet;
+    localStorage.setItem('theme',sheet);
+}
