@@ -124,7 +124,7 @@ td {
 
 .footer {
     text-align: center;
-    margin: 28vh auto;
+    margin: 6vh auto;
     display: flex;
     justify-content: center;
     gap: 1vw;
@@ -187,4 +187,18 @@ td {
     background-color: black;
     text-align: center;
     cursor: pointer;
+}
+#live{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10vh;
+    color: blueviolet;
+font-weight: bold;
+}
+.live-count{
+    text-align: center;
+margin-top: 10vh;
+}
+.eye{
+    height: 10px;
 }

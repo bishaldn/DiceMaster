@@ -168,3 +168,6 @@ function swapStyle(sheet){
     document.getElementById('myStyleSheet').href = sheet;
     localStorage.setItem('theme',sheet);
 }
+function liveStatus(response){
+    document.querySelector('#live').textContent=response.value;
+}
