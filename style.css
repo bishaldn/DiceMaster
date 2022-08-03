@@ -136,46 +136,54 @@ td {
     color: red;
     font-size: 23px;
 }
-.image-t{
+
+.image-t {
     animation: flipV 1s linear;
     height: 11vh;
 }
-@keyframes flipV{
-    50%{
+
+@keyframes flipV {
+    50% {
         transform: rotateY(180deg);
     }
-    
+
 }
-.icon{
+
+.icon {
     width: 30px;
 }
-.github{
+
+.github {
     color: blueviolet;
     font-size: 20px;
     text-shadow: 1px 1px blue;
 }
-.btn-mode{
+
+.btn-mode {
     gap: 1vh;
     display: flex;
-    justify-content: space-around;
-  }
-  .btn-dark{
-      border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  border: none;
-  color: black;
-  background-color: white;
-  cursor: pointer;
+    justify-content: end;
+    margin-right: 6vw;
+}
 
-  text-align: center;
-  }
-  .btn-light{
-      border-radius: 50%;
-  height: 39px;
-  width: 40px;
-  border: none;
-  color: white;
-  background-color: white;
-  text-align: center;
-  }
+.btn-dark {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+    text-align: center;
+}
+
+.btn-light {
+    border-radius: 50%;
+    height: 39px;
+    width: 40px;
+    border: none;
+    color: white;
+    background-color: white;
+    text-align: center;
+}
