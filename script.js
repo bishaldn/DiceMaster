@@ -139,14 +139,19 @@ var dec = 1;
 function limit(amrita) {
     if (amrita == (5)) {
         setTimeout(() => {
-            document.getElementById('title').innerHTML = "Out of trails, Complete dice-2";
+            swal("5 trails are allowed", "Roll dice 2 to complete the game");
         }, 1);
     }
     else if(amrita==6){
         setTimeout(() => {
             window.location.reload(true);
-        }, 1000); 
-        document.getElementById('title').innerHTML = "Game Over,Starting Again";
+        }, 2000); 
+        swal({
+            title: "Game Over",
+            text: "You roll the dice more than 5 times!",
+            icon: "warning",
+            button: "Play Again",
+          });
         const game_over = new Audio();
          game_over.src = './sound/gameover.wav';
         game_over.play();
