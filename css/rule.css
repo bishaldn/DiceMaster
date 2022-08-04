@@ -134,10 +134,11 @@ p {
 }
 .btn-play{
     text-align: center;
-    width: 8vw;
-    height: 32px;
+    width: 13vw;
+    height: 38px;
     color: white;
     background: linear-gradient(to right, #aa31c8, #356cd4);
     border: 1px solid black;
     border-radius: 9px;
+    font-size: 17px;
   }
