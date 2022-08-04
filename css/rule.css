@@ -10,19 +10,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f6f6f6;
+    background-image: url("../dices/2825826.gif");
 }
 
 .rule-box {
-    isplay: grid;
+    display: grid;
     justify-content: center;
     margin: 5vh auto;
     width: 400px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-bottom: 30px solid #0c5e85;
-    height: 50vh;
-  }
+    border-bottom: 101px solid #0c5e85;
+    height: 59vh;
+}
 
 
 .rule-box h2 {
@@ -52,7 +52,7 @@ body {
     box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
     transition: transform 0.5s;
     display: flex;
-    height: 7vh;
+    height: 9vh;
 }
 
 .rule-box ul li:hover {
@@ -85,10 +85,12 @@ body {
 
 h1 {
     margin-top: 2vh;
-    text-shadow: 2px 1px blueviolet;
+    text-shadow: 2px 1px #5d3680;
     font-size: 30px;
     text-align: center;
+    color: white;
 }
+
 
 .title-img {
     height: 25px;
@@ -103,8 +105,8 @@ h1 {
 }
 
 .f-text-1 {
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 19px;
 }
 
 .f-text-2 {
@@ -128,17 +130,19 @@ p {
     text-align: ;
     font-size: 12px;
 }
-.btn{
+
+.btn {
     text-align: center;
     margin: auto;
 }
-.btn-play{
+
+.btn-play {
     text-align: center;
-    width: 13vw;
-    height: 38px;
+    width: 22vw;
+    height: 6vh;
     color: white;
     background: linear-gradient(to right, #aa31c8, #356cd4);
     border: 1px solid black;
     border-radius: 9px;
     font-size: 17px;
-  }
+}
