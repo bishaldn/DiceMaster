@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+
+.rule-box {
+    isplay: grid;
+    justify-content: center;
+    margin: 5vh auto;
+    width: 400px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 30px solid #0c5e85;
+    height: 50vh;
+  }
+
+
+.rule-box h2 {
+    color: #fff;
+    background: linear-gradient(to right, #aa31c8, #356cd4);
+    padding: 10px 78px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+    text-align: center;
+    height: 10vh;
+}
+
+.rule-box ul {
+    position: relative;
+    background: #fff;
+    color: black;
+    width: 400px;
+}
+
+.rule-box ul li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    transition: transform 0.5s;
+    display: flex;
+    height: 7vh;
+}
+
+.rule-box ul li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background: linear-gradient(to right, #aa31c8, #356cd4);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.rule-box ul li span {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #0c5e85;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.rule-box ul li:hover span {
+    background: #fff;
+    color: #0c5e85;
+}
+
+h1 {
+    margin-top: 2vh;
+    text-shadow: 2px 1px blueviolet;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title-img {
+    height: 25px;
+}
+
+.footer {
+    text-align: center;
+    margin: 6vh auto;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.f-text-1 {
+    color: black;
+    font-size: 20px;
+}
+
+.f-text-2 {
+    color: red;
+    font-size: 23px;
+}
+
+.icon {
+    width: 30px;
+}
+
+p {
+    color: blueviolet;
+    font-size: 15px;
+    text-shadow: 1px 1px blue;
+}
+
+.pp {
+    color: black;
+    text-shadow: none;
+    text-align: ;
+    font-size: 12px;
+}
+.btn{
+    text-align: center;
+    margin: auto;
+}
+.btn-play{
+    text-align: center;
+    width: 8vw;
+    height: 32px;
+    color: white;
+    background: linear-gradient(to right, #aa31c8, #356cd4);
+    border: 1px solid black;
+    border-radius: 9px;
+  }

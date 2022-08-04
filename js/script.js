@@ -159,7 +159,7 @@ function limit(amrita) {
 }
 var setTheme = localStorage.getItem('theme');
 if(setTheme==null){
-    swapStyle('style.css');
+    swapStyle('css/style.css');
 }
 else{
     swapStyle(setTheme);
