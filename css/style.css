@@ -162,7 +162,7 @@ td {
 .btn-mode {
     display: flex;
     justify-content: end;
-    margin-right:;
+    margin-right: ;
 }
 
 .btn-dark {
@@ -186,19 +186,36 @@ td {
     background-color: white;
     text-align: center;
 }
-#live{
+
+#live {
 
     font-size: 16px;
     color: blueviolet;
     font-weight: bold;
 }
-.live-count{
+
+.live-count {
     text-align: center;
-margin-top: 10vh;
+    margin-top: 10vh;
 }
-.eye{
+
+.eye {
     height: 10px;
 }
-.title-img{
+
+.title-img {
     height: 25px;
+}
+
+.go-back {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 14vh;
+}
+
+.go-back-btn {
+    border-radius: 50%;
+    background: white;
+    border: none;
 }

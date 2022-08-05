@@ -204,3 +204,22 @@ margin-top: 10vh;
 .title-img{
     height: 24px;
 }
+.go-back {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 14vh;
+}
+
+.go-back-btn {
+    border-radius: 50%;
+    background: black;
+    border: none;
+    color: red;
+}
+.go-back-btn:hover{
+    border-radius: 50%;
+    background: black;
+    border: none;
+    color:white;
+}
